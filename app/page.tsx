@@ -161,7 +161,7 @@ export default function Portfolio() {
             </a>
           </div>
           <a
-            href="https://drive.google.com/file/d/1Tdq4vLhWEFWH-3uCMjS8f9tN2G4PDkpV/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1ZHFUzFvIyoZMnkZmtHMpcPG9OSjhCiVA/view?usp=sharing"
             className="btn animate-pop"
             target="_blank"
             rel="noopener noreferrer"
@@ -178,7 +178,7 @@ export default function Portfolio() {
             <div className="hexagon-border"></div>
             <div className="hexagon-border hexagon-border-2"></div>
             <img
-              src="/professional-headshot-of-roheet-saha--electronics-.png"
+              src="Profile photo.jpg"
               alt="Roheet Profile"
               className="profile-img"
             />
@@ -200,7 +200,7 @@ export default function Portfolio() {
               <ul>
                 <li>
                   <strong>B.Tech - Electronics and Communication Engineering</strong>, VIT Vellore (2022–Present) -
-                  CGPA: 8.86/10
+                  CGPA: 8.9/10
                 </li>
                 <li>
                   <strong>Higher Secondary (ISC)</strong>, Salt Lake Point School (84%)
@@ -497,22 +497,6 @@ export default function Portfolio() {
               </div>
               <div className="tech-item">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
-                  alt="Firebase"
-                  className="tool-firebase"
-                />
-                <span>Firebase</span>
-              </div>
-              <div className="tech-item">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                  alt="Git"
-                  className="tool-git"
-                />
-                <span>Git</span>
-              </div>
-              <div className="tech-item">
-                <img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                   alt="GitHub"
                   className="tool-github"
@@ -593,8 +577,8 @@ export default function Portfolio() {
               <p>AQI Monitoring System</p>
             </a>
             <div className="project-card">
-              <img src="/women-safety-mobile-app-interface-with-emergency-b.png" alt="Women Safety App" />
-              <p>Women Safety App</p>
+              <img src="/women-safety-app-black-background.png" alt="Women Safety App" />
+              <p>Women Safety Device</p>
             </div>
             <a
               href="https://roheetsaha007.github.io/TIC_TAC_TOE--PROGIDY_03/"
@@ -611,7 +595,7 @@ export default function Portfolio() {
               className="project-card"
               rel="noreferrer"
             >
-              <img src="/digital-stopwatch-application-with-precise-timing-.png" alt="Digital Stopwatch" />
+              <img src="/digital-stopwatch-black-background.png" alt="Digital Stopwatch" />
               <p>Digital Stopwatch</p>
             </a>
             <a
@@ -620,7 +604,7 @@ export default function Portfolio() {
               className="project-card"
               rel="noreferrer"
             >
-              <img src="/weather-application-with-forecast-display-temperat.png" alt="Weather Application" />
+              <img src="/weather-app-black-background.png" alt="Weather Application" />
               <p>Weather Application</p>
             </a>
             <a
@@ -629,7 +613,7 @@ export default function Portfolio() {
               className="project-card"
               rel="noreferrer"
             >
-              <img src="/modern-responsive-landing-page-design-with-hero-se.png" alt="Landing Page" />
+              <img src="/landing-page-design-black-background.png" alt="Landing Page" />
               <p>Landing Page</p>
             </a>
           </div>
@@ -645,29 +629,29 @@ export default function Portfolio() {
               <div className="contact-item">
                 <Phone className="contact-icon" />
                 <div>
-                  <strong>Primary Phone:</strong>
+                  <strong>Primary Phone: <span></span></strong>
                   <span>+91 9064004743</span>
                 </div>
               </div>
               <div className="contact-item">
                 <MessageSquare className="contact-icon" />
                 <div>
-                  <strong>WhatsApp:</strong>
+                  <strong>WhatsApp: <span></span></strong>
                   <span>+91 8509311748</span>
                 </div>
               </div>
               <div className="contact-item">
                 <Mail className="contact-icon" />
                 <div>
-                  <strong>Professional Email:</strong>
+                  <strong>Professional Email: <span></span></strong>
                   <span>roheetsaha2955@gmail.com</span>
                 </div>
               </div>
               <div className="contact-item">
                 <MapPin className="contact-icon" />
                 <div>
-                  <strong>Location:</strong>
-                  <span>Bagchipara Lane, Nabadwip, West Bengal - 741302, India</span>
+                  <strong>Location: <span></span></strong>
+                  <span> Nabadwip, West Bengal - 741302, India</span>
                 </div>
               </div>
               <div className="contact-item">
@@ -677,7 +661,7 @@ export default function Portfolio() {
                   </svg>
                 </div>
                 <div>
-                  <strong>LinkedIn:</strong>
+                  <strong>LinkedIn: <span></span></strong>
                   <span>linkedin.com/in/roheetsaha7</span>
                 </div>
               </div>
@@ -685,23 +669,9 @@ export default function Portfolio() {
             <div className="contact-cta">
               <h3 className="work-heading">Ready to Collaborate?</h3>
               <div className="quote">
-                "I'm passionate about turning innovative ideas into reality. Whether you need full-stack development,
-                IoT solutions, or technical analysis, let's discuss how we can work together to achieve your goals."
+               I don’t just build projects — I craft solutions that blend innovation, technology, and real-world impact
               </div>
-              <div className="availability-notice">
-                <h4 style={{ color: "#7afcff", marginTop: "2rem", marginBottom: "1rem" }}>📅 Availability</h4>
-                <p style={{ color: "#cbd5e1", fontSize: "1rem", lineHeight: "1.6" }}>
-                  Currently available for freelance projects and full-time opportunities. Response time: Within 24 hours
-                  for all professional inquiries.
-                </p>
-              </div>
-              <div className="consultation-offer">
-                <h4 style={{ color: "#7afcff", marginTop: "2rem", marginBottom: "1rem" }}>💡 Free Consultation</h4>
-                <p style={{ color: "#cbd5e1", fontSize: "1rem", lineHeight: "1.6" }}>
-                  Schedule a complimentary 30-minute consultation to discuss your project requirements and explore how
-                  my expertise can benefit your business.
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
