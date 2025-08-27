@@ -215,13 +215,13 @@ export default function Portfolio() {
               <ul>
                 <li>
                   <strong>Embedded System Design Intern</strong> - Maven Silicon (May 2025 – Jun 2025)
-                  <br />• Implemented real-time safety device with GSM, GPS, and buzzer, ensuring 99.99% uptime
+                  <br />• Implemented real-time women safety device with GSM, GPS, and buzzer, ensuring 99.99% uptime
                   <br />• Explored FSMs, SRAM/DRAM, and RISC/ARM architectures, boosting digital design knowledge by 30%
                 </li>
                 <li>
                   <strong>Web Development Intern</strong> - Skilledity and Prodigy InfoTech (Sep 2024 – Nov 2024)
                   <br />• Developed 3 interactive JavaScript apps focusing on responsive design
-                  <br />• Engineered role-based school portal using Tailwind CSS and GitHub deployment
+                  <br />• Engineered role-based school website using Tailwind CSS and GitHub deployment
                 </li>
               </ul>
             </div>
@@ -336,7 +336,7 @@ export default function Portfolio() {
                   >
                     <strong>Letter of Recommendation</strong>
                   </a>{" "}
-                  for Front-end Development
+                  for Front-end Development (Skilledity Solution Limited)
                 </li>
                 <li>
                   Solved <strong>100+</strong> problems on{" "}
@@ -398,8 +398,9 @@ export default function Portfolio() {
               <div className="service-icon">🔬</div>
               <h3>MATLAB & Signal Processing</h3>
               <p>
-                Advanced simulation and modeling using MATLAB, Simulink, COMSOL for engineering research, battery
-                management systems, and signal processing applications.
+                Proficient in advanced simulation and multiphysics modeling using MATLAB, Simulink, 
+                and COMSOL for engineering research, focusing on electronics, 
+                communication systems, battery management, and signal processing applications.
               </p>
             </div>
           </div>
