@@ -195,84 +195,103 @@ export default function Portfolio() {
       <About/>
       <Services/>
       {/* Work Section */}
-      <section className="work-section" id="work">
-        <div className="section-container">
-          <h2 className="section-title">💼 My Project Showcase</h2>
-          <div className="project-gallery">
-            <a
-              href="https://www.linkedin.com/posts/roheetsaha7_powerbi-dataanalytics-dashboardproject-activity-7351300319319912448-wFyy"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/modern-power-bi-dashboard-with-charts-graphs-analy.png" alt="Power BI Dashboard" />
-              <p>Power BI Dashboard</p>
-            </a>
-            <div className="project-card">
-              <img src="/electric-vehicle-battery-management-system-interfa.png" alt="EV Battery Management System" />
-              <p>EV Battery Management System</p>
-            </div>
-            <a
-              href="https://www.linkedin.com/posts/roheetsaha7_radarsystem-aeroscan-arduinoproject-activity-7342849743464632320-yotE"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/smart-surveillance-radar-system-with-arduino-senso.png" alt="Smart Surveillance Radar" />
-              <p>Smart Surveillance Radar</p>
-            </a>
-            <a
-              href="https://www.linkedin.com/posts/roheetsaha7_iot-arduino-aqimonitoring-activity-7338041115020795906-i9JI"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/air-quality-monitoring-system-with-sensors-environ.png" alt="AQI Monitoring System" />
-              <p>AQI Monitoring System</p>
-            </a>
-            <div className="project-card">
-              <img src="/women-safety-app-black-background.png" alt="Women Safety App" />
-              <p>Women Safety Device</p>
-            </div>
-            <a
-              href="https://roheetsaha007.github.io/TIC_TAC_TOE--PROGIDY_03/"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/modern-tic-tac-toe-game-interface-with-neon-colors.png" alt="Tic Tac Toe" />
-              <p>Tic‑Tac‑Toe</p>
-            </a>
-            <a
-              href="https://roheetsaha007.github.io/PROJECT_STOPWATCH--PRODIGY_02/"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/digital-stopwatch-black-background.png" alt="Digital Stopwatch" />
-              <p>Digital Stopwatch</p>
-            </a>
-            <a
-              href="https://roheetsaha007.github.io/WEATHER--PROGIDY_05/"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/weather-app-black-background.png" alt="Weather Application" />
-              <p>Weather Application</p>
-            </a>
-            <a
-              href="https://roheetsaha007.github.io/PROJECT_LANDING--PRODIGY_01/land"
-              target="_blank"
-              className="project-card"
-              rel="noreferrer"
-            >
-              <img src="/landing-page-design-black-background.png" alt="Landing Page" />
-              <p>Landing Page</p>
-            </a>
-          </div>
-        </div>
-      </section>
+<section className="work-section" id="work">
+  <div className="section-container">
+    <h2 className="section-title">💼 My Project Showcase</h2>
+    <div className="project-gallery">
+      <a
+        href="https://www.linkedin.com/posts/roheetsaha7_powerbi-dataanalytics-dashboardproject-activity-7351300319319912448-wFyy"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/modern-power-bi-dashboard-with-charts-graphs-analy.png" alt="Power BI Dashboard" />
+        <p>Power BI Dashboard</p>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/posts/roheetsaha7_electricvehicles-batterymanagementsystem-activity-7365258666670817280-sVhx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWNgnoB7gRxSHKET1uErmNh-8iDYZRF93k"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/electric-vehicle-battery-management-system-interfa.png" alt="EV Battery Management System" />
+        <p>EV Battery Management System</p>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/posts/roheetsaha7_radarsystem-aeroscan-arduinoproject-activity-7342849743464632320-yotE"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/smart-surveillance-radar-system-with-arduino-senso.png" alt="Smart Surveillance Radar" />
+        <p>Smart Surveillance Radar</p>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/posts/roheetsaha7_iot-arduino-aqimonitoring-activity-7338041115020795906-i9JI"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/air-quality-monitoring-system-with-sensors-environ.png" alt="AQI Monitoring System" />
+        <p>AQI Monitoring System</p>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/posts/roheetsaha7_embeddedsystems-iotprojects-womensafety-activity-7350132814496813057-DKyA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEWNgnoB7gRxSHKET1uErmNh-8iDYZRF93k"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/women-safety-app-black-background.png" alt="Women Safety App" />
+        <p>Women Safety Device</p>
+      </a>
+
+      <a
+        href="https://roheetsaha007.github.io/TIC_TAC_TOE--PROGIDY_03/"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/modern-tic-tac-toe-game-interface-with-neon-colors.png" alt="Tic Tac Toe" />
+        <p>Tic-Tac-Toe</p>
+      </a>
+
+      <a
+        href="https://roheetsaha007.github.io/PROJECT_STOPWATCH--PRODIGY_02/"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/digital-stopwatch-black-background.png" alt="Digital Stopwatch" />
+        <p>Digital Stopwatch</p>
+      </a>
+
+      <a
+        href="https://roheetsaha007.github.io/WEATHER--PROGIDY_05/"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/weather-app-black-background.png" alt="Weather Application" />
+        <p>Weather Application</p>
+      </a>
+
+      <a
+        href="https://roheetsaha007.github.io/PROJECT_LANDING--PRODIGY_01/land"
+        target="_blank"
+        className="project-card"
+        rel="noreferrer"
+      >
+        <img src="/landing-page-design-black-background.png" alt="Landing Page" />
+        <p>Landing Page</p>
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section className="contact-section" id="contact">
