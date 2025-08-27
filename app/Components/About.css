@@ -61,8 +61,6 @@
     width: 60%;
   }
 }
- { opacity: 1; }
-}
 
 /* About Section */
 .about-section {
@@ -72,10 +70,6 @@
   position: relative;
   overflow: hidden;
 }
-  
-
-Do you want me to **slightly refine this** (without making it long) to add a **subtle world-class effect** like smooth scroll fade or background pan, while keeping the structure exactly the same?
-
 
 .about-section::before {
   content: "";
@@ -313,11 +307,12 @@ Do you want me to **slightly refine this** (without making it long) to add a **s
   font-size: 0.95rem;
 }
 
-/* Experience Grid */
 .experience-grid {
   display: grid;
   gap: 1.5rem;
+  padding: 1.5rem 2rem; /* ✅ more space on sides */
 }
+
 
 .experience-card {
   background: rgba(0, 247, 255, 0.05);
@@ -626,6 +621,7 @@ Do you want me to **slightly refine this** (without making it long) to add a **s
 .achievements-container {
   display: grid;
   gap: 1.5rem;
+  padding: 1.5rem 2rem;
 }
 
 .achievement-item {

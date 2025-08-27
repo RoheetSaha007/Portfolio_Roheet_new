@@ -113,7 +113,7 @@ export default function Portfolio() {
             <span className="link-text">About</span>
             <span className="link-hover"></span>
           </a>
-          <a href="#Services" className="nav-link" onClick={() => scrollToSection("services")}>
+          <a href="#Services" className="nav-link" onClick={() => scrollToSection("Services")}>
             <span className="link-text">Services</span>
             <span className="link-hover"></span>
           </a>
@@ -146,7 +146,7 @@ export default function Portfolio() {
             </a>
             <a href="https://www.facebook.com/roheet.saha.142" target="_blank" className="social-icon" rel="noreferrer">
               <i className="fab fa-facebook"></i>
-              <span className="pulse-ring"></span>
+              <span className="pulse-rfing"></span>
             </a>
             <a href="https://www.linkedin.com/in/roheetsaha7/" target="_blank" className="social-icon" rel="noreferrer">
               <i className="fab fa-linkedin"></i>

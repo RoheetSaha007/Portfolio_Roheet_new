@@ -126,6 +126,7 @@ const Services = () => {
     <section 
       ref={sectionRef}
       className="services-section"
+      id = "Services"
     >
       {/* Dynamic Background */}
       <div className="services-background"></div>
