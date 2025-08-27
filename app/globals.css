@@ -1343,7 +1343,7 @@ body {
 
 
 /* ============ RESPONSIVE DESIGN ============ */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1110px) {
   .home {
     flex-direction: column;
     padding: 8rem 5% 4rem;
@@ -1386,7 +1386,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1025px) {
   .header {
     padding: 1rem 4%;
   }
