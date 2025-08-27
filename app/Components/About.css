@@ -25,45 +25,6 @@
   color: var(--main-color);
   text-align: center;
   margin-bottom: 4rem;
-  text-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
-  font-weight: 700;
-  position: relative;
-  animation: titleGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes titleGlow {
-  from {
-    text-shadow: 0 0 20px rgba(0, 247, 255, 0.5);
-  }
-  to {
-    text-shadow: 0 0 30px rgba(0, 247, 255, 0.8), 0 0 40px rgba(0, 247, 255, 0.3);
-  }
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 4px;
-  background: linear-gradient(90deg, transparent, var(--main-color), transparent);
-  border-radius: 2px;
-  animation: underlineGlow 2s ease-in-out infinite;
-}
-
-@keyframes underlineGlow {
-  0%, 100% { opacity: 0.6; }
-  50% { opacity: 1; }
-}
-
-/* About Section */
-.section-title-head-h {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 4rem;
   font-weight: 700;
   position: relative;
   overflow: hidden;
@@ -100,6 +61,21 @@
     width: 60%;
   }
 }
+ { opacity: 1; }
+}
+
+/* About Section */
+.about-section {
+  min-height: 100vh;
+  padding: 8rem 0;
+  background: linear-gradient(135deg, var(--bg-primary), rgba(22, 27, 34, 0.9));
+  position: relative;
+  overflow: hidden;
+}
+``` ✅  
+
+Do you want me to **slightly refine this** (without making it long) to add a **subtle world-class effect** like smooth scroll fade or background pan, while keeping the structure exactly the same?
+
 
 .about-section::before {
   content: "";
