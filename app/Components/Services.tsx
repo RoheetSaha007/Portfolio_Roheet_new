@@ -12,7 +12,7 @@ import {
   Hexagon,
   Circle
 } from 'lucide-react';
-import './services.css';
+import './Services.css';
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
