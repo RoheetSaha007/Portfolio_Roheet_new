@@ -1782,6 +1782,8 @@ body {
 }
 
 /* About Section */
+
+/*
 .about-section {
   min-height: 100vh;
   padding: 8rem 0;
@@ -1812,8 +1814,7 @@ body {
   padding: 2rem;
   border-radius: 15px;
   border: 1px solid rgba(0, 247, 255, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
@@ -1880,8 +1881,11 @@ body {
   color: var(--accent-color);
   text-shadow: 0 0 5px rgba(255, 0, 79, 0.5);
 }
+*/
 
 /* Services Section */
+
+/*
 .services-section {
   min-height: 100vh;
   padding: 8rem 0;
@@ -1904,7 +1908,6 @@ body {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 2rem;
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -1914,11 +1917,11 @@ body {
   padding: 2.5rem;
   border-radius: 20px;
   border: 1px solid rgba(0, 247, 255, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 247, 255, 0.05);
 }
 
 .service-card::before {
@@ -1928,26 +1931,35 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 247, 255, 0.1) 0%, transparent 70%);
+  background: conic-gradient(from 180deg at 50% 50%, rgba(0, 247, 255, 0.15), transparent 70%);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.6s ease, transform 1.2s ease;
   pointer-events: none;
 }
 
 .service-card:hover::before {
   opacity: 1;
+  transform: rotate(20deg) scale(1.2);
 }
 
 .service-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 247, 255, 0.3);
-  border-color: rgba(0, 247, 255, 0.5);
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(0, 247, 255, 0.35);
+  border-color: rgba(0, 247, 255, 0.6);
 }
+*/
 
+/* Floating Icon Effect */
+/*
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   display: block;
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+.service-card:hover .service-icon {
+  transform: translateY(-6px) scale(1.1);
+  text-shadow: 0 0 12px rgba(0, 247, 255, 0.8), 0 0 20px rgba(0, 247, 255, 0.4);
 }
 
 .service-card h3 {
@@ -1955,13 +1967,28 @@ body {
   color: #7afcff;
   margin-bottom: 1rem;
   font-weight: 600;
+  text-align: left;   
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.service-card:hover h3 {
+  color: #00f7ff;
+  text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
 }
 
 .service-card p {
   color: #cbd5e1;
   line-height: 1.6;
   font-size: 1rem;
+  text-align: left;   
 }
+
+.service-card:hover p {
+  color: #e2e8f0;
+}
+
+
 
 .tech-stack {
   text-align: center;
@@ -1990,7 +2017,6 @@ body {
 .tech-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 2rem;
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -2033,7 +2059,10 @@ body {
   font-weight: 500;
 }
 
+*/
 /* Enhanced hover effects for specific tools */
+
+/*
 .tech-item:hover .tool-tailwind {
   filter: drop-shadow(0 0 10px #06b6d4);
 }
@@ -2053,7 +2082,7 @@ body {
 .tech-item:hover .tool-java {
   filter: drop-shadow(0 0 10px #f89820);
 }
-
+/*
 /* Work Section */
 .work-section {
   min-height: 100vh;

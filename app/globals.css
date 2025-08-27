@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+ 
 
 :root {
   --font-poppins: "Poppins", sans-serif;
@@ -693,6 +694,8 @@ body {
 }
 
 /* About Section */
+
+/*
 .about-section {
   min-height: 100vh;
   padding: 8rem 0;
@@ -790,8 +793,11 @@ body {
   color: var(--accent-color);
   text-shadow: 0 0 5px rgba(255, 0, 79, 0.5);
 }
+*/
 
 /* Services Section */
+
+/*
 .services-section {
   min-height: 100vh;
   padding: 8rem 0;
@@ -853,8 +859,10 @@ body {
   box-shadow: 0 25px 50px rgba(0, 247, 255, 0.35);
   border-color: rgba(0, 247, 255, 0.6);
 }
+*/
 
 /* Floating Icon Effect */
+/*
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -871,7 +879,7 @@ body {
   color: #7afcff;
   margin-bottom: 1rem;
   font-weight: 600;
-  text-align: left;   /* restored to left alignment */
+  text-align: left;   
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
@@ -885,7 +893,7 @@ body {
   color: #cbd5e1;
   line-height: 1.6;
   font-size: 1rem;
-  text-align: left;   /* left aligned */
+  text-align: left;   
 }
 
 .service-card:hover p {
@@ -963,7 +971,10 @@ body {
   font-weight: 500;
 }
 
+*/
 /* Enhanced hover effects for specific tools */
+
+/*
 .tech-item:hover .tool-tailwind {
   filter: drop-shadow(0 0 10px #06b6d4);
 }
@@ -983,7 +994,7 @@ body {
 .tech-item:hover .tool-java {
   filter: drop-shadow(0 0 10px #f89820);
 }
-
+/*
 /* Work Section */
 .work-section {
   min-height: 100vh;
