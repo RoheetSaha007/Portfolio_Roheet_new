@@ -45,7 +45,7 @@ export default function Portfolio() {
     }
 
     // Typewriter effect
-    const text = "Roheet Saha"
+    const text = "Roheet Saha GOD"
     const typingTarget = typingRef.current
     if (typingTarget) {
       let i = 0
