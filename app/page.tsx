@@ -113,7 +113,7 @@ export default function Portfolio() {
             <span className="link-text">About</span>
             <span className="link-hover"></span>
           </a>
-          <a href="#services" className="nav-link" onClick={() => scrollToSection("services")}>
+          <a href="#Services" className="nav-link" onClick={() => scrollToSection("services")}>
             <span className="link-text">Services</span>
             <span className="link-hover"></span>
           </a>
