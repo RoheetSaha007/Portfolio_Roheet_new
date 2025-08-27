@@ -290,18 +290,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Category Filters */}
-          <div className="category-filters">
-            {categories.map((category, index) => (
-              <div
-                key={category}
-                className={`category-filter ${isVisible ? 'visible' : ''}`}
-                style={{ transitionDelay: `${(index * 100) + 800}ms` }}
-              >
-                {category}
-              </div>
-            ))}
-          </div>
+          
 
           {/* Tech Grid */}
           <div className="tech-grid">
