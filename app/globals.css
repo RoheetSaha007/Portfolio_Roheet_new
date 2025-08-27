@@ -882,12 +882,11 @@ body {
 
 .service-card p {
   color: #cbd5e1;
-  line-height: 1.7;
+  line-height: 1.6;
   font-size: 1rem;
-  text-align: justify;          /* aligns text from both sides */
-  text-justify: inter-word;
-  transition: color 0.3s ease;
+  text-align: left;   /* restored to original left alignment */
 }
+
 .service-card:hover p {
   color: #e2e8f0;
 }
