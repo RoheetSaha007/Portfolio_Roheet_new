@@ -147,9 +147,6 @@
   transition: all 0.3s ease;
 }
 
-.section-header-h:hover {
-  background: rgba(0, 247, 255, 0.05);
-}
 
 .section-icon {
   width: 2rem;
