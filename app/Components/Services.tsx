@@ -121,7 +121,6 @@ const Services = () => {
     { name: "Linux", icon: "https://www.svgrepo.com/show/448236/linux.svg", color: "#f2c811", category: "OS" }
   ];
 
-  const categories = [...new Set(technologies.map(tech => tech.category))];
 
   return (
     <section 
@@ -304,12 +303,7 @@ const Services = () => {
               >
                 <div className="tech-card">
                   
-                  {/* Category Badge */}
-                  <div className="category-badge">
-                    <span className="badge-text">
-                      {tech.category}
-                    </span>
-                  </div>
+                 
                   
                   {/* Glow Effect */}
                   <div 
