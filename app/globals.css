@@ -871,10 +871,11 @@ body {
   color: #7afcff;
   margin-bottom: 1rem;
   font-weight: 600;
-  text-align: center;
+  text-align: left;   /* restored to left alignment */
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
+
 .service-card:hover h3 {
   color: #00f7ff;
   text-shadow: 0 0 8px rgba(0, 247, 255, 0.6);
@@ -884,12 +885,13 @@ body {
   color: #cbd5e1;
   line-height: 1.6;
   font-size: 1rem;
-  text-align: left;   /* restored to original left alignment */
+  text-align: left;   /* left aligned */
 }
 
 .service-card:hover p {
   color: #e2e8f0;
 }
+
 
 
 .tech-stack {
