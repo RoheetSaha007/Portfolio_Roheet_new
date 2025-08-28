@@ -14,7 +14,22 @@
 }
 
 /* Base Styles */
+.section-containment {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
 
+.section-title-head-h {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  animation: slideFadeIn 1.2s ease-out;
+}
 
 /* Subtle underline reveal */
 .section-title-head-h::after {
