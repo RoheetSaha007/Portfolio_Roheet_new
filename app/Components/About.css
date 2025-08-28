@@ -14,22 +14,7 @@
 }
 
 /* Base Styles */
-.section-containment {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
-.section-title-head-h {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 4rem;
-  font-weight: 700;
-  position: relative;
-  overflow: hidden;
-  animation: slideFadeIn 1.2s ease-out;
-}
 
 /* Subtle underline reveal */
 .section-title-head-h::after {
@@ -671,60 +656,185 @@
   text-shadow: 0 0 5px rgba(255, 0, 79, 0.5);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .section-container {
-    padding: 0 1rem;
+/* ============ RESPONSIVE DESIGN ============ */
+@media screen and (max-width: 1320px) {
+  .home {
+    flex-direction: column;
+    padding: 7rem 5% 3rem;
+    gap: 3rem;
+    text-align: center;
   }
-  
-  .about-section {
-    padding: 4rem 0;
+
+  .home-img-wrapper {
+    margin: 0 auto;
+    max-width: 480px;
+    aspect-ratio: 1 / 1;
   }
-  
-  .section-header-h {
-    padding: 1.5rem;
+
+  .home-img {
+    clip-path: none;
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
-  
-  .section-content.expanded {
-    padding: 0 1.5rem 1.5rem;
+
+  .home-content {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
   }
-  
-  .timeline {
-    padding-left: 1.5rem;
+
+  .social-media {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
-  
-  .timeline-marker {
-    left: -1.25rem;
-  }
-  
-  .certifications-grid {
+
+  .contact-content {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
-  
-  .experience-card:hover {
-    transform: translateY(-5px);
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
   }
-  
-  .achievement-item:hover {
-    transform: translateY(-5px);
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1.5rem;
   }
 }
 
-@media (max-width: 480px) {
-  .section-header-h h3 {
-    font-size: 1.5rem;
+@media screen and (max-width: 1025px) {
+  .header {
+    padding: 1rem 4%;
   }
-  
-  .timeline-content h4 {
-    font-size: 1.1rem;
+
+  .menu-toggle {
+    display: block;
   }
-  
-  .achievement-item {
+
+  .navbar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(13, 17, 23, 0.95);
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
   }
-  
-  .achievement-icon {
-    align-self: center;
+
+  .navbar.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-link {
+    margin: 0.6rem 0;
+    font-size: 1.15rem;
+  }
+
+  .home {
+    padding: 7rem 4% 3rem;
+    gap: 2rem;
+  }
+
+  /* 👇 Force center alignment of name */
+  .home-content h1,
+  .home-content h1 span {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .typing-effect-once {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    text-align: center;
+    line-height: 1.3;
+    display: block;
+    margin: 0 auto;
+    word-break: break-word; /* prevents overflow */
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .project-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .section-container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-img-wrapper {
+    max-width: 350px;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .typing-effect-once {
+    font-size: clamp(1.8rem, 7vw, 2.3rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .home-img-wrapper {
+    max-width: 260px;
+  }
+
+  .section-group {
+    padding: 1.2rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .social-media {
+    gap: 0.8rem;
   }
 }

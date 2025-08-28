@@ -1001,6 +1001,7 @@ body {
   padding: 8rem 0;
   background: linear-gradient(135deg, rgba(13, 17, 23, 0.9), rgba(22, 27, 34, 0.9));
   position: relative;
+  overflow: hidden; /* ✅ ensures animations or glows don’t overflow */
 }
 
 .work-section::before {
@@ -1013,22 +1014,30 @@ body {
   background: radial-gradient(circle at 40% 80%, rgba(0, 247, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 0, 79, 0.1) 0%, transparent 50%);
   pointer-events: none;
+  animation: subtleGlow 12s infinite alternate ease-in-out; /* ✅ smooth background animation */
+}
+
+@keyframes subtleGlow {
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 0.6; transform: scale(1.1); }
 }
 
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem; /* ✅ more breathing space */
+  padding: 0 2rem; /* ✅ padding inside for balance */
 }
 
 .project-card {
-  background: rgba(22, 27, 34, 0.8);
+  background: rgba(22, 27, 34, 0.85);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s ease;
   border: 1px solid rgba(0, 247, 255, 0.2);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(14px); /* ✅ slightly stronger blur */
   position: relative;
+  transform-style: preserve-3d; /* ✅ improves hover 3D feel */
 }
 
 .project-card::before {
@@ -1038,9 +1047,9 @@ body {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(0, 247, 255, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(0, 247, 255, 0.2) 0%, transparent 70%);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.5s ease;
   pointer-events: none;
   z-index: 1;
 }
@@ -1050,32 +1059,41 @@ body {
 }
 
 .project-card:hover {
-  transform: translateY(-15px) scale(1.03);
-  box-shadow: 0 25px 50px rgba(0, 247, 255, 0.3);
-  border-color: rgba(0, 247, 255, 0.5);
+  transform: translateY(-15px) scale(1.05) rotate3d(1, 1, 0, 4deg); /* ✅ subtle 3D tilt */
+  box-shadow: 0 25px 60px rgba(0, 247, 255, 0.35),
+              0 0 25px rgba(0, 247, 255, 0.2); /* ✅ layered glow */
+  border-color: rgba(0, 247, 255, 0.6);
 }
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 220px; /* ✅ slightly taller for modern layout */
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+  filter: brightness(0.9) contrast(1.1); /* ✅ richer image colors */
 }
 
 .project-card:hover img {
   transform: scale(1.1);
+  filter: brightness(1) contrast(1.15); /* ✅ pop effect on hover */
 }
 
 .project-card p {
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.15rem; /* ✅ slightly larger for elegance */
   padding: 1.5rem;
-  background: rgba(13, 17, 23, 0.9);
+  background: linear-gradient(90deg, rgba(13, 17, 23, 0.95), rgba(22, 27, 34, 0.95));
   margin: 0;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600; /* ✅ more premium weight */
+  letter-spacing: 0.5px; /* ✅ more polished typography */
   position: relative;
   z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover p {
+  color: #00f7ff; /* ✅ premium hover text accent */
 }
 
 /* Contact Section */
@@ -1343,23 +1361,26 @@ body {
 
 
 /* ============ RESPONSIVE DESIGN ============ */
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1200px) {
   .home {
     flex-direction: column;
-    padding: 8rem 5% 4rem;
+    padding: 7rem 5% 3rem;
     gap: 3rem;
     text-align: center;
   }
 
   .home-img-wrapper {
-    margin-left: 0;
-    max-width: 500px;
+    margin: 0 auto;
+    max-width: 480px;
     aspect-ratio: 1 / 1;
   }
 
   .home-img {
     clip-path: none;
     border-radius: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   .home-content {
@@ -1370,19 +1391,23 @@ body {
 
   .social-media {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
 
   .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
   }
 
   .tech-icons {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1.5rem;
   }
 }
 
@@ -1407,6 +1432,7 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     transform: translateY(-150%);
     opacity: 0;
+    transition: all 0.3s ease;
     backdrop-filter: blur(10px);
   }
 
@@ -1416,34 +1442,35 @@ body {
   }
 
   .nav-link {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    font-size: 1.15rem;
   }
 
   .home {
-    padding: 8rem 4% 4rem;
+    padding: 7rem 4% 3rem;
     gap: 2rem;
   }
 
   .typing-effect-once {
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
   }
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .project-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
   }
 
   .tech-icons {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+    gap: 1.2rem;
   }
 
   .section-container {
@@ -1451,17 +1478,17 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .typing-effect-once {
-    font-size: 2.5rem;
+@media screen and (max-width: 768px) {
+  .home-img-wrapper {
+    max-width: 350px;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 5vw, 2.2rem);
   }
 
-  .home-img-wrapper {
-    max-width: 280px;
+  .services-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-gallery {
@@ -1471,16 +1498,58 @@ body {
   .tech-icons {
     grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   }
+}
+
+@media screen and (max-width: 480px) {
+  .typing-effect-once {
+    font-size: clamp(1.8rem, 7vw, 2.3rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .home-img-wrapper {
+    max-width: 260px;
+  }
 
   .section-group {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .service-card {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .contact-item {
     padding: 1rem;
+  }
+
+  .social-media {
+    gap: 0.8rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .home-img-wrapper {
+    max-width: 220px;
+  }
+
+  .typing-effect-once {
+    font-size: clamp(1.5rem, 8vw, 2rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.3rem, 7vw, 1.8rem);
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .social-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 }
