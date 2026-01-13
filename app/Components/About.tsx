@@ -104,7 +104,7 @@ const About = () => {
                   <div className="timeline-content">
                     <h4>B.Tech - Electronics and Communication Engineering</h4>
                     <p className="institution">VIT Vellore (2022–Present)</p>
-                    <p className="grade">CGPA: 8.9/10</p>
+                    <p className="grade">CGPA: 8.91/10</p>
                   </div>
                 </div>
                 <div className="timeline-item">
